@@ -1,9 +1,64 @@
-Q1-What is Cloud Computing ?
+Q1-WHAT IS CLOUD COMPUTING ?
 Ans- Combination of two words cloud+computing basially, use of different types of services over internet by individual
 organization or by computing devices. for.eg google drive etc..
---------------------------------------------------------------------------
-Q2-Deployment model in cloud
-Ans-Mainly there are three types of deployment model or cloud types ,
 
+❈.🎀------------------------------------------------------------------------------------------------  🎀  .❈
+Q2-DEPLOYMENT MODEL IN CLOUD.
+Ans-Mainly there are three types of deployment model or cloud types ,
+ 
 1.Public cloud.
-->hvjvm
+->AS the name suggest this cloud can be use publically .
+In this a service provider make resource such as application,storage i.e avaiable to genral public over internet.
+Here most of the things are provided by cloud we just use services & pay as you use.
+
+2.Private cloud.
+->In this cloud the company or organization can make their private cloud and hand in to their users ,so that this shouls be 
+accessible for their private users only . In privat cloud our date is secured by firewall.
+
+3.Hybrid cloud.
+->The hybrid cloud is the cloud where both public and private cloud use frequently.
+
+❈.🎀------------------------------------------------------------------------------------------------  🎀  .❈
+
+Q3-SERVICE MODEL IN CLOUD.
+Ans-There are three types of service model
+
+1.IAAS(Infrastructure as a service)--Ex-EC2
+->In IAAS the whole hardware is provided by cloud .And the cloud will gives a installed OS (this os will choose by us)
+eg.linux,ubuntu etc..and than we have use according yo our requirment.
+
+2.PAAS(Platform as a service)--Ex-
+->IN PAAS the cloud will give us the installed application we just have to manage our database 
+
+3.
+->Simplest service,In SAAS we dont have to manage anything .Every thing is provided by the cloud.
+Ex-all the application that we are using is day to day life like insta,FB,Gmail,etc...
+
+❈.🎀------------------------------------------------------------------------------------------------  🎀  .❈
+
+Q4-ARCHITECTURE OF CLOUD COMPUTING.
+Ans-Cloud architecture refers to how various cloud technology components, such as hardware, virtual resources, 
+software capabilities, and virtual network systems interact and connect to create cloud computing environments.
+
+❈.🎀------------------------------------------------------------------------------------------------  🎀  .❈
+
+Q5.AWS GLOBAL INFRASTRUCTURE COUNT ?
+Ans-32 Launched Regions--each with multiple Availability Zones (AZs)
+102 Availability Zones
+600+ Points of Presence and 13 Regional Edge Caches
+
+❈.🎀------------------------------------------------------------------------------------------------  🎀  .❈
+
+Q6-WHY WE USE REGION
+Ans-AWS has multiple regions around the world, and each region is further divided into Availability Zones.
+we use region becz it gives low latency, high throughput, highly redundant networking.
+
+❈.🎀------------------------------------------------------------------------------------------------  🎀  .❈
+
+Q7-wHAT IS SERVICE AND RESOURCE ?
+Ans-
+
+
+
+
+
