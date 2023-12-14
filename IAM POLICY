@@ -1,1 +1,55 @@
-h,jsavnbiok
+1.How many resources do we have in IAM ?
+-> There are Four resource in IAM namely group,role,users,policy .
+  
+2. Deployment model in AM?
+->
+
+3. Identities in IAM ?
+-> Identites in iam is use for security purpose so that the right person can access the Data and Resource .
+
+4. What is an IAM User ?
+->IAM user in aws is use to access or control the resource of AWS.
+
+5. What is the IAM Group ?
+-> Instead of giving policy to each individual we can create a group of members and attach the policy we want.So that 
+ It reduces the manpower and  its work as an organization system.
+
+6. What is the IAM Policy ?
+-> IAM Policy is nothing but the permission given to employee so that Employee works according to admin . And Employee
+cannot Intercat with the other services until he don't have access to that service.
+
+7. What is the IAM Role ?
+-> IAM role in aws is a bunch of policy that we can assign to resource or users.
+  Roles help manage permissions securely and flexibly.
+
+8. Where do we attach Identity Based Policy ?
+-> Identity based policy in aws is used to attach policy to identity or users .
+
+9. Where do we attach Resource Based Policy ?
+-> Resourcr based policy we can apply on the resoureces like S3 bucket , EC2 Instance etc .
+
+10. Can we be able to create Policy via json code ?
+-> YES
+
+.11 If one user has created it by default, which permission has been assigned to that user?
+-> The user will not have any policy or permission.
+
+ 12. What is dominator policy ?
+-> The policy having the highest priority or power we can call it as dominator policy.
+
+13. What is ARN ?
+-> ARN (AMAZON RESOURCE NAME) is unique hashcode for aws resource like role users bucket object etc.. Use to identify the 
+  specific user,bucket,object etc.
+
+14. What are the fields in ARN?
+-> arn:aws:service::account_id resource-type:resource-name
+EXAMPLE____(arn:aws:iam::492371891180:user/ok)
+
+14. How many types of ARN Partition?
+-> There are 3 types of aws partition namely
+1-aws-us ( FOR UNITED STATE)
+2-aws
+3-aws-cn ( FOR CHINA )
+
+15. What are Tags ?
+-> TAGS in aws is uer for unique identity so that we can figure out what is the role of specific user.
