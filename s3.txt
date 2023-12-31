@@ -1,0 +1,107 @@
+---------------S3 question and answer----------------------------
+
+Q1-Difference between Block storage & Object Storage?
+->Block Storage-ITs like a hard drive.
+                You can read and write any data at any time, and it's stored in fixed-size blocks.
+ Object Storage-Imagine a big container where you put everything like files, pictures.
+                You don’t manage individual blocks; you just store and retrieve entire objects.
+
+Q2-Difference between static website & dynamic website ?
+->Static Website: Made up of fixed content. Every user sees the same thing and No database.
+  Dynamic Website:Here there is not a fix content ,the content are updated frequently.
+
+Q3-What are the naming rules?
+->Bucket names must be  unique.
+  Can't use uppercase letters.
+  Must be between 3 and 63 characters long.
+  Can't use underscores, only hyphens.
+
+Q4-What is the major resource of S3 Bucket?
+->Major resource of s3 bucket is to store files photos,vid etc..
+
+Q5-Why do we need to host static websites instead of dynamic websites?
+->Hosting static websites on S3 is cheaper, simpler, and faster because It is a serverless.
+
+Q6-What is versioning & Why do we need versioning?
+->Versioning keeps multiple versions of an object. It helps in recovere the updated version of current object.
+
+Q7-What are the objects and types of objects that we are uploading into the S3 Bucket?
+->Objects can be anything like images, videos, text files, etc.
+
+Q8-Why is MFA Delete important in S3 Bucket object level?
+->MFA Delete requires an additional security to permanently delete an object, 
+   adding a extra layer of security against accidently deletions.
+
+Q9-What is S3 Multipart upload?
+->Multipart upload lets you upload a large object in smaller parts. 
+  This can speed up uploads, especially for large files, and improve resumability.
+
+Q10-What are the storage classes in Amazon S3?
+->Standard, Intelligent-Tiering, One Zone-IA, Glacier, Glacier Deep Archive. Each class has different features and pricing.
+
+Q11-What is ACL?
+->Stands for Access Control List. It's a set of rules that define who can access an object and what they can do with it.
+
+Q12-Why do we need ACL?
+->ACLs ensure that only authorized users can access or modify objects, adding a layer of security.
+
+Q13-What is a Life cycle policy? Why do we need to use the life cycle rule?
+->Lifecycle policies define actions to be taken on objects after a certain period,
+  like moving old data to cheaper storage or deleting it after a certain time.
+
+Q14-How can we make our bucket public?
+->By using bucket policies or ACLs,
+
+Q15->How can we give public access to our bucket?
+->Create bucket policies or ACLs to allow public read access.
+
+Q16-Aws pricing factor of the S3 Service.
+-> Aws pricing is Based on storage used, number of requests, data transfer, storage class.
+
+Q17-How can we make our object public?
+->Set object ACLs or bucket policies to allow public read access. 
+
+Q18-How can we configure the static website logs in s3?
+->You can enable server access logging on your bucket, which logs requests made to the bucket.
+
+Q19-What is CORS?
+Stands for Cross-Origin Resource Sharing. It's a security feature that controls which web domains can access your content.
+
+Q20-What is S3 Inventory?
+->S3 Inventory provides a scheduled report listing objects and their metadata in your bucket. Useful for compliance, audit, and analytics.
+
+Q21-What does it mean by Requester pays?
+->If someone else accesses your objects in S3, they pay for the data transfer and requests, not you.
+
+Q22-What is the secondary word to Transfer acceleration? Why do we need to use this transfer acceleration?
+->The secondary word is "fast". Transfer Acceleration uses Amazon's backbone network to speed up uploads to S3 from anywhere in the world. 
+  It's useful for transferring large amounts of data faster than regular uploads.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
