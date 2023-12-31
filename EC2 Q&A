@@ -1,0 +1,183 @@
+--------------------EC2-------------------------------
+
+Q1-What is EC2, Why do we need EC2 service in cloud computing ?
+->It's a web service from Amazon Web Services (AWS) that provides resizable compute capacity in the cloud.
+ Essentially, it allows users to rent virtual computers on which they can run their own applications.
+
+Q2- Features of Amazon EC2 ?
+->1-Scalable compute capacity.
+  2-Various instance types for diverse needs.
+  3-Persistent storage options.
+  4-Integrated with other AWS services.
+  5-Security groups and key pairs for access control.
+
+Q3-What is Hypervisor ? and its types ?
+->Hypervisor is a software that creates and runs virtual machines (VMs).
+ Types:
+ Type 1 (Bare Metal Hypervisors): Directly installed on the host's hardware.
+ Type 2 (Hosted Hypervisors): Installed on top of an operating system.
+
+Q4-Where we use hypervisor?
+->In virtualization environments, to create and manage virtual machines.
+
+Q5-Steps to create an EC2 instance?
+->1-Sign in to AWS Management Console.
+  2-Navigate to EC2.
+  3-Launch Instance.
+  4-Choose an Amazon Machine Image (AMI).
+  5-Choose an instance type.
+  6-Configure instance details.
+  7-Add storage.
+  8-Configure security groups and key pairs.
+  9-Launch the instance.
+
+Q6-EC2 Instance state?
+->Represents the state of the EC2 instance, such as running, stopped, terminated,stopping.
+
+Q7-How many types of EC2 Instance-State codes ?
+->the states are: pending,running,shutting-down,terminated,stopping,and stopped.
+
+Q8- What is the meaning of server hibernating mode ? ?
+->It's a state where the server's state is saved to disk and the server is powered off. When restarted, it resumes from where it left off.
+
+Q9-What is KMS ? 
+->Key Management Service is an AWS service that makes it easier to create and manage cryptographic keys used to encrypt data.
+
+Q10-AWS Amazon EC2 Instance types ?
+-> Examples include t2.micro, m5.large, c5.xlarge, etc., each designed for specific workload requirements.
+
+Q11- How many types of status checks happen in aws ?
+->there are two types: system status checks and instance status checks, ensuring that the instance is reachable and functioning properly.
+
+Q12- When we see the global view option in ec2 service ?
+->Allows users to view all their EC2 resources across different regions in a unified view.
+
+Q13-When we logged into the cloud account by default why do we always jump into the north
+virginia region, why it’s most popular ?
+->North Virginia region It's one of AWS's oldest and most populated regions, offering a wide range of services and features.
+  IT is popular becz it has heigest AZ's zone 
+
+Q14- What are EBS Volumes and its types ?
+->They are block-level storage volumes attached to EC2 instances.
+ Types include General Purpose (SSD), Provisioned IOPS (SSD), Throughput Optimized (HDD), and Cold HDD.
+
+Q15-Purpose of Using EBS volumes ?
+->To provide persistent storage that can be attached to EC2 instances.
+
+Q16-Purchasing options in AWS EC2:
+->On-Demand Instances, Reserved Instances, and Spot Instances.
+
+Q17-Difference between AWS AMI Image & AWS Template ?
+->AMI (Amazon Machine Image) is a template that contains software configuration and other settings.
+ A template (like CloudFormation) describes AWS resources and their configurations.
+
+Q18- What is NIC & it’s types ?
+->Hardware component that allows a device to connect to a network. 
+  Types include wired and wireless.
+
+Q19- What is elastic IP ? & WHY were we used ?
+->A static IPv4 address designed for dynamic cloud computing.
+  It's used when you want a fixed IP address that can be quickly remapped to different instances.
+
+Q20- What is the snapshot ? why we use it ?
+->A point-in-time copy of an EBS volume.
+ Used for backups, replication, and disaster recovery.
+
+Q21- How can we save money in snapshot costing, if an automated snapshot has been created ?
+->Saving money in snapshot costing: By deleting unused snapshots, setting up retention policies,
+  or using automation to manage snapshot creation and deletion.
+
+Q22-What is the lifecycle manager in snapshot ?
+->Allows users to automate the creation, retention, and deletion of EBS volume snapshots.
+
+Q23-. How does the Amazon lifecycle manager work ?
+->Automates routine tasks like backups, retention, and deletion of resources like EBS volumes.
+
+Q23-Difference between Security Group & NACL ? 
+->Security Groups are stateful and act as a firewall for EC2 instances. 
+NACLs are stateless and control inbound and outbound traffic at the subnet level.
+
+Q24-. What are NACL & Its types ?
+->Network Access Control Lists. 
+Types include inbound and outbound rules that allow or deny traffic based on IP protocol, port number, and source/destination IP.
+
+Q25-. How many IP Addresses can we attach to the instances ?
+->You can attach one primary private IP per network interface and multiple secondary private IPs. 
+   Elastic IPs can also be attached.
+
+Q26-How many types of volume states do we have ?
+->Available, in-use, creating, deleting, and error.
+
+Q27-. What is a key pair, and its types ?
+->A set of public and private keys used for secure access to EC2 instances. 
+Types include EC2 Instance Key Pairs and EC2 Key Pairs for Windows.
+
+Q28- What is load balancer and its types ?
+-> Distributes incoming application or network traffic across multiple targets. 
+  Types: Application Load Balancer (ALB), Network Load Balancer (NLB), and Classic Load Balancer (CLB).
+
+Q29-. How does the load balancer work in the backend? Can you explain it ?
+->Distributes traffic to instances based on configured algorithms 
+1-round-robin distribute the traffic in into circular load balancer with
+ static load balancing without any priority.
+
+2-least connection will distribute the traffic when server have least
+  engaged connection with server.
+
+3-Least time will distribute the traffic to those server,who have less response time
+
+Q30- Features of Load Balancers ?
+->High availability, automatic scaling, SSL termination, and health checks.
+
+Q31- What is ASG ? & Its types ? 
+->ASGis  the number of EC2 instances in a group matches a desired count.
+ Types include Launch Configuration and Launch Templates.
+
+Q32-What is a Health Check ?
+->A periodic check performed by load balancers to ensure instances are healthy and can handle traffic.
+
+Q33-. What is the threshold ?
+->A value set for health checks or alarms that, when exceeded, triggers actions.
+
+Q34-What is the group of LB ?
+->Refers to the group of load balancers that perform the distribution of incoming traffic.
+
+Q35-Why do we prefer ALB over ALB ?
+->ALB operates at the application layer and is ideal for HTTP/HTTPS traffic.
+ NLB operates at the transport layer and is designed for TCP/UDP traffic.
+
+Q36- Difference between Web server & Application server ? 
+->Web servers handle HTTP requests and return responses. 
+Application servers run application logic and interface between the data and the web server.
+
+Q37- What is the target group ?
+->A logical grouping of targets (instances) registered with a load balancer for routing requests.
+
+Q38-What is the desired capacity in ASG ? 
+->The number of EC2 instances that should be running in the group.
+
+Q39- How many types of the Scaling option ?
+->Manual scaling, scheduled scaling, and dynamic scaling.
+
+Q40- Scaling plans ?
+Pre-defined scaling strategies for ASG, such as target tracking, step scaling, and simple scaling.
+
+Q41-Types of Auto Scaling ?
+->Scaling based on demand, scheduled scaling, and predictive scaling.
+
+Q42-Difference between vertical scaling and horizontal scaling ?
+Vertical scaling (or scaling up) involves adding resources to an existing instance.
+                 Used by developer.
+
+Horizontal scaling (or scaling out) involves adding more instances to distribute the load.
+                  Used by Production for creating replica's
+
+Q42-Difference between AMI & Snapshot ?
+An AMI is a template for EC2 instances. 
+A snapshot is a backup of an EBS volume.
+
+Q43-What is Difference between EBS/EFS/S3 ?
+-> 
+  -EBS: Block storage attached to EC2 instances.
+  - EFS: Managed NFS file system service.
+  - S3: Object storage service for storing and retrieving data.
