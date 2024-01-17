@@ -1,0 +1,70 @@
+1.	What is VPC?
+-> In simple terms, a Virtual Private Cloud (VPC) is like a private network in the cloud. 
+  It lets you create a logically isolated section of the Amazon Web Services (AWS) cloud where you can launch and run your resources.
+
+2.	What are Subnets when working with VPC?
+-> Subnets are smaller segments of a VPC. Think of them as divisions within your private cloud. 
+  They help you organize and manage your resources effectively,
+  allowing you to control traffic flow and apply security measures.
+
+3.	What is NAT Device?
+->	A Network Address Translation (NAT) device helps your private resources in the VPC access the internet while keeping their individual identities hidden. 
+  It acts like a translator, allowing your internal resources to communicate with the internet without exposing their private addresses.
+  
+4.	Difference between stateful & stateless filtering?
+-> Stateful filtering remembers the state of the connection and makes decisions based on the context of the traffic. 
+  Stateless filtering, on the other hand, evaluates each packet individually without considering the context of previous packets.
+  
+5.	Advantages of using default VPC?
+->	The default VPC simplifies the setup process by providing a pre-configured network. 
+  It's convenient for beginners as it eliminates the need for manual configuration, making it easier to launch resources quickly.
+    
+6.	What is the internet gateway in VPC?
+-> An internet gateway is a connection point that allows your VPC to communicate with the internet. 
+    It enables resources in your VPC to access the internet and vice versa.
+    
+7.	What is Network ACL in VPC?
+-> Network Access Control Lists (ACLs) are like virtual firewalls that control traffic at the subnet level in your VPC. 
+  They allow or deny traffic based on rules you define.
+    
+8.	What is the Security Group in VPC?
+-> A Security Group acts as a virtual firewall at the instance level. 
+  It controls inbound and outbound traffic for your instances, providing an additional layer of security.
+    
+9.	What is an Elastic IP Address in VPC, and why use it?
+->	An Elastic IP is a static public IP address that you can attach to your instances. 
+    It's useful when you want a fixed address for services like a website, 
+   and it helps in case of instance failure, allowing you to quickly redirect traffic to a new instance.
+     
+10.	Can we attach one Production Elastic IP to a new Prod server?
+->	Yes, you can attach a production Elastic IP to a new production server. 
+    This is useful for maintaining a consistent public IP address for your service even if you replace or upgrade the underlying server.
+      
+11.	How does ELB Affect a VPC?
+->	Elastic Load Balancer (ELB) distributes incoming traffic across multiple instances, 
+  enhancing the availability and fault tolerance of your applications in the VPC.
+      
+12.	Limitations of VPCs, Gateway, and Subnets?
+->	VPCs have limits on the number of resources you can create. 
+  Gateways and subnets may have limitations on the number of connections and size. 
+  It's essential to be aware of these limits to plan your architecture effectively.
+      
+13.	What is a Public IP Address and why use it?
+-> A Public IP Address is an address on the internet that can be accessed publicly. 
+  It's used for resources that need to be directly reachable from the internet, like web servers.
+    
+14.	Explain Bastion Host Concept?
+->	A Bastion Host is a server that acts as a secure gateway between your internal network and the internet. 
+  It provides a controlled entry point for accessing your private resources, adding an extra layer of security.
+    
+15.	When do we need to create a new customized VPC?
+->	You might create a custom VPC when you need specific network configurations that the default VPC doesn't offer,
+  or when you want more control over your network architecture.
+  
+16.	What is Peering? Why peer at two VPCs?
+-> Peering is connecting two VPCs to allow them to communicate with each other as if they are on the same network. 
+It's useful for sharing resources, data, or services between different VPCs.
+  
+17.	What is VPN, Where do we use VPN Tunnel?
+->	VPN (Virtual Private Network) creates a secure, encrypted connection over the internet. 
+  VPN tunnels are used to connect remote networks or users securely to a private network, such as connecting your on-premises data center to your VPC.
