@@ -1,0 +1,45 @@
+1.What is a CloudTrail?
+->CloudTrail is a service provided by AWS that records and monitors account activity and events in your AWS environment.
+  It keeps a detailed history of API calls made on your account, including who made the call, the services used, and when the call occurred.
+
+2.Why do we use trails, what is the exact purpose of enabling the trail in cloud production accounts?
+->Trails in AWS CloudTrail help in auditing, compliance, and security. 
+  Enabling trail logging in cloud production accounts serves the purpose of recording and monitoring all activities and events that occur within the account. 
+  It creates a log or trail of actions taken by users, services, or resources.
+  
+3.Explain how we can create a trail in AWS CloudTrail?
+->To create a trail in AWS CloudTrail, you can use the AWS Management Console . 
+  Simply go to the CloudTrail console, choose "Trails," and click "Create trail." 
+
+4.How can we enable logging for an S3 bucket using CloudTrail?
+->Logging for an S3 bucket is configured separately. 
+  To enable logging for an S3 bucket using CloudTrail, go to the S3 bucket settings, 
+  choose "Management and Events," and then select the CloudTrail trail you want to associate with the bucket.
+
+5.How do you get the list of all created trails in your production account?
+->You can view the list of created trails in the AWS CloudTrail console. 
+  Navigate to the "Trails" section, and you'll see a list of all trails configured in your AWS account.
+
+6.Can we create a trail for a multi-region, if yes then how can we configure it?
+->Yes, you can create a trail that spans multiple regions. 
+  When creating or updating a trail, select the option to apply the trail to all regions. 
+  This ensures that the trail captures events from all supported AWS regions.
+
+7.How can we disable logging for certain events, services in CloudTrail? If yes, explain how?
+->You can configure event selectors to filter and disable logging for specific events or services. 
+  In the CloudTrail console, edit your trail, go to the "Event selectors" section, and specify the events or services you want to exclude.
+
+8.Real-time use case of CloudTrail?
+->A real-time use case for CloudTrail is monitoring and identifying unauthorized access to AWS resources. 
+  For example, if someone attempts to modify a security group or access sensitive data, 
+  CloudTrail can provide immediate insights, helping you respond quickly to potential security threats.
+
+9.What is CloudTrail event history?
+->CloudTrail event history is a record of events captured by CloudTrail, retained for 90 days. 
+  It includes details like the event name, timestamp, and user identity. 
+  You can access this information to investigate changes and activities in your AWS environment.
+
+10.What is log file integrity validation in CloudTrail?
+->Log file integrity validation in CloudTrail ensures that the log files haven't been tampered with. 
+  CloudTrail uses hash functions to create digest files, and you can use these digests to verify the integrity of log files,
+  providing an additional layer of security and trustworthiness to your audit trail.
